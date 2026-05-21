@@ -18,8 +18,11 @@ android {
         targetSdk = 34
         versionCode = 2
         versionName = "2.0"
+        val localProps = org.jetbrains.kotlin.konan.properties.Properties()
+        val localPropsFile = rootProject.file("local.properties")
+        if (localPropsFile.exists()) localPropsFile.inputStream().use { localProps.load(it) }
 
-        val apiKey = project.findProperty("GROQ_API_KEY")?.toString() ?: ""
+        val apiKey = localProps.getProperty("GROQ_API_KEY") ?: ""
         buildConfigField("String", "GROQ_API_KEY", "\"$apiKey\"")
     }
 
