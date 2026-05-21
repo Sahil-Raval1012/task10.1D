@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_card_blue"
+    android:layout_marginBottom="10dp">
+
+    <!-- Collapsed header row (always visible) -->
+    <LinearLayout
+        android:id="@+id/llHistoryHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground">
+        <TextView
+            android:id="@+id/tvHistoryHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1. Question text…"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+        <TextView
+            android:id="@+id/tvExpandArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="▼"
+            android:textColor="@color/white_70"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <!-- Expandable content (GONE by default) -->
+    <LinearLayout
+        android:id="@+id/llHistoryContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="14dp"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_30"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/tvHistoryQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full question text"
+            android:textColor="@color/white_70"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Answer option rows added programmatically -->
+        <LinearLayout
+            android:id="@+id/llAnswers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    </LinearLayout>
+
+</LinearLayout>
