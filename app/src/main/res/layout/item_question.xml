@@ -15,7 +15,6 @@
         android:textColor="@color/white"
         android:textStyle="bold"
         android:textSize="20sp"/>
-
     <TextView
         android:id="@+id/tvQuestionText"
         android:layout_width="match_parent"

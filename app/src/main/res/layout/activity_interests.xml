@@ -6,7 +6,6 @@
     android:background="@drawable/bg_gradient"
     android:orientation="vertical"
     android:padding="24dp">
-
     <ImageButton
         android:id="@+id/btnBack"
         android:layout_width="40dp"
@@ -14,7 +13,6 @@
         android:src="@drawable/ic_back"
         android:background="@android:color/transparent"
         android:contentDescription="@string/back"/>
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -47,7 +45,6 @@
         android:layout_weight="1"
         app:chipSpacingHorizontal="10dp"
         app:chipSpacingVertical="10dp"/>
-
     <Button
         android:id="@+id/btnNext"
         android:layout_width="match_parent"
@@ -58,5 +55,4 @@
         android:textAllCaps="false"
         android:textSize="20sp"
         android:background="@drawable/bg_btn_green"/>
-
 </LinearLayout>

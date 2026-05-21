@@ -10,8 +10,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="25dp">
-
-        <!-- Back button -->
         <ImageButton
             android:id="@+id/btnBack"
             android:layout_width="40dp"
@@ -22,7 +20,6 @@
             android:background="@drawable/bg_card_blue"
             android:contentDescription="@string/back"/>
 
-        <!-- Title -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -39,7 +36,6 @@
             android:textSize="40sp"
             android:textStyle="bold"/>
 
-        <!-- ─────── Starter plan ─────── -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,7 +43,6 @@
             android:background="@drawable/bg_card_blue"
             android:padding="20dp"
             android:layout_marginBottom="15dp">
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -76,8 +71,6 @@
                 android:textSize="20sp"
                 android:background="@drawable/bg_btn_green"/>
         </LinearLayout>
-
-        <!-- ─────── Intermediate plan (Best Seller) ─────── -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -92,7 +85,6 @@
                 android:orientation="horizontal"
                 android:gravity="center_vertical"
                 android:layout_marginBottom="5dp">
-
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -101,7 +93,6 @@
                     android:textColor="@color/white"
                     android:textSize="25sp"
                     android:textStyle="bold"/>
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -113,7 +104,6 @@
                     android:paddingHorizontal="10dp"
                     android:paddingVertical="5dp"/>
             </LinearLayout>
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -121,7 +111,6 @@
                 android:text="@string/improved_quiz_gen"
                 android:textColor="@color/white_70"
                 android:textSize="15sp"/>
-
             <Button
                 android:id="@+id/btnIntermediate"
                 android:layout_width="match_parent"
@@ -134,7 +123,6 @@
                 android:background="@drawable/bg_btn_green"/>
         </LinearLayout>
 
-        <!-- ─────── Advanced plan ─────── -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -159,7 +147,6 @@
                 android:text="@string/improved_quiz_gen"
                 android:textColor="@color/white_70"
                 android:textSize="15sp"/>
-
             <Button
                 android:id="@+id/btnAdvanced"
                 android:layout_width="match_parent"
@@ -171,8 +158,6 @@
                 android:textSize="20sp"
                 android:background="@drawable/bg_btn_green"/>
         </LinearLayout>
-
         <Space android:layout_width="match_parent" android:layout_height="10dp"/>
-
     </LinearLayout>
 </ScrollView>

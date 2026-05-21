@@ -4,14 +4,11 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_gradient"
     android:fillViewport="true">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="20dp">
-
-        <!-- Back button row -->
         <ImageButton
             android:id="@+id/btnBack"
             android:layout_width="40dp"
@@ -21,7 +18,6 @@
             android:background="@drawable/bg_card_blue"
             android:contentDescription="@string/back"/>
 
-        <!-- Username + Avatar header -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -29,7 +25,6 @@
             android:gravity="center_vertical"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp">
-
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -65,7 +60,6 @@
                     android:paddingVertical="3dp"/>
             </LinearLayout>
 
-            <!-- Avatar circle -->
             <FrameLayout
                 android:layout_width="60dp"
                 android:layout_height="60dp"
@@ -79,7 +73,6 @@
             </FrameLayout>
         </LinearLayout>
 
-        <!-- Green notification banner -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -93,14 +86,12 @@
             android:textSize="15sp"
             android:textStyle="bold"/>
 
-        <!-- 2x2 Stat cards grid - Row 1 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginBottom="10dp">
 
-            <!-- Total Questions -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="100dp"
@@ -129,7 +120,6 @@
                     android:textStyle="bold"/>
             </LinearLayout>
 
-            <!-- Correctly Answered -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="100dp"
@@ -159,14 +149,12 @@
             </LinearLayout>
         </LinearLayout>
 
-        <!-- 2x2 Stat cards grid - Row 2 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginBottom="20dp">
 
-            <!-- Incorrect Answers -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="100dp"
@@ -195,7 +183,6 @@
                     android:textStyle="bold"/>
             </LinearLayout>
 
-            <!-- AI Summary Card -->
             <LinearLayout
                 android:id="@+id/cardAiSummary"
                 android:layout_width="0dp"
@@ -229,7 +216,6 @@
             </LinearLayout>
         </LinearLayout>
 
-        <!-- Small secondary navigation buttons -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -261,7 +247,6 @@
                 android:background="@drawable/bg_card_blue_deep"/>
         </LinearLayout>
 
-        <!-- Main Share button (green, prominent) -->
         <Button
             android:id="@+id/btnShare"
             android:layout_width="match_parent"
@@ -275,8 +260,6 @@
             android:textAllCaps="false"
             android:textSize="20sp"
             android:background="@drawable/bg_btn_green"/>
-
         <Space android:layout_width="match_parent" android:layout_height="20dp"/>
-
     </LinearLayout>
 </ScrollView>

@@ -6,7 +6,6 @@
     android:padding="30dp"
     android:background="#FFFFFFFF">
 
-    <!-- G Pay header -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -75,7 +74,6 @@
             android:layout_weight="1"
             android:background="#F0F0F0"/>
     </LinearLayout>
-
     <Button
         android:id="@+id/btnPayNow"
         android:layout_width="match_parent"
